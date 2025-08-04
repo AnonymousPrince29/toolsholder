@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Content Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><i class="fas fa-robot"></i> AI Content Tools</h1>
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Tool Navigation -->
+  <nav class="tool-categories">
+    <button class="category-btn active" data-category="all">All Tools</button>
+    <button class="category-btn" data-category="writing">Writing</button>
+    <button class="category-btn" data-category="social">Social Media</button>
+  </nav>
+
+  <!-- Tools Grid -->
+  <main class="tools-container">
+    <!-- Tools will be dynamically inserted here by JavaScript -->
+  </main>
+
+  <!-- Tool Modal (hidden by default) -->
+  <div id="toolModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Blog Post Generator</h2>
+      <div class="tool-interface">
+        <textarea id="userInput" placeholder="Enter your topic..."></textarea>
+        <button id="generateBtn">Generate</button>
+        <div id="outputContainer" class="output-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
